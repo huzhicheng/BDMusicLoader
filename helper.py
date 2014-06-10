@@ -10,7 +10,6 @@ import urllib,urllib2,cookielib,re,codecs
 from bdMusicHtmlParser import MyClass
 from bdMusicHtmlParser import DownloadHTMLParser
 import os,time
-import chardet
 import setting
 
 class helper(object):
@@ -75,7 +74,7 @@ class helper(object):
             for kv in htmlParser.links:
                 
                 #/download?__o=/song/108479485
-                print chardet.detect(kv[0])
+                #print chardet.detect(kv[0])
                 musicList.write("<li><a href='%s/download?__o=%s'>%s</a>" % (kv[1],kv[2],kv[0].decode("utf8")))
                 #onlyLinkTxt.write(kv[1]+kv[2]+"\r\n") #只存储链接到本本文件中 以便之后读取下载地址
                 onlyLinkTxt.write("%s/download?__o=%s\r\n" % (kv[1],kv[2].decode("utf8")))

@@ -13,7 +13,6 @@ BDMusicLoader
 username = "your baidu acount"    #配置你的百度账号
 password = "your baidu password"  #配置你的百度密码
 
-#热歌
 musiclistUrl = "http://music.baidu.com/top/dayhot"  #http://music.baidu.com/top/new  #新歌
 
 2.直接运行mainWindow.py文件，本工具目前只采用单线程解析，如果网速不给力的话可能需要等待2到3分钟。

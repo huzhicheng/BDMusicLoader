@@ -42,7 +42,7 @@ def Login(url):
 
     print "oh yeah Login Start"
     baiduMainLoginUrl = "https://passport.baidu.com/v2/api/?login"
-    userInfo = {"userName":"huzhichenghigher@126.com","passWord":"517106011"}
+    userInfo = {"userName":"","passWord":""}
     postData = BuildPostData(tokenVal,userInfo)
     userAgent ="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36"
     baiduRequest = urllib2.Request(baiduMainLoginUrl,postData,headers={"User-Agent":userAgent})
